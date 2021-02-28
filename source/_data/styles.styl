@@ -1,0 +1,133 @@
+#links{
+	margin-top: 5rem;
+	.links-content{
+		margin-top:1rem;
+	}
+	.link-navigation::after {
+		content: " ";
+		display: block;
+		clear: both;
+	}
+	.card {
+		width: 300px;
+		font-size: 1.1em;
+		padding: 10px 20px;
+		border-radius: 4px;
+		transition-duration: 0.15s;
+		margin-bottom: 1rem;
+		display:flex;
+	}
+	.card:nth-child(odd) {
+		float: left;
+	}
+	.card:nth-child(even) {
+		float: right;
+		+mobile() {
+			float: left;
+		}
+	}
+	.card:hover {
+		transform: scale(1.1);
+		box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.12), 0 0 6px 0 rgba(0, 0, 0, 0.04);
+		background: rgba(68, 68, 68, 0.12)
+	}
+	.card a {
+		border:none;
+	}
+	.card .ava {
+		width: 3rem!important;
+		height: 3rem!important;
+		margin:0!important;
+		margin-right: 1em!important;
+		border-radius:50%
+		transition: transform 1s ease-out;
+	}
+	.ava:hover {
+			transform: rotateZ(360deg);
+		}
+	.card .card-header {
+		font-style: italic;
+		overflow: hidden;
+		width: 236px;
+	}
+	.card .card-header a {
+		font-style: normal;
+		color: #2bbc8a;
+		font-weight: bold;
+		text-decoration: none;
+	}
+	.card .card-header a:hover {
+		color: #d480aa;
+		text-decoration: none;
+	}
+	.card .card-header .info {
+		font-style:normal;
+		color:#a3a3a3;
+		font-size:14px;
+		min-width: 0;
+		text-overflow: ellipsis;
+		overflow: hidden;
+		white-space: nowrap;
+	}
+	span.focus-links{
+		vertical-align:1px;
+		font-style:normal;
+		margin-left:10px;
+		position:unset;
+		left:0;
+		padding:0 7px 0 5px;
+		font-size:11px;
+		border-color:#42c02e;
+		border-radius:40px;
+		line-height:24px;
+		height:24px;
+		color:#fff!important;
+		background-color:#2bbc8a;
+		display:inline-block
+		}
+	span.focus-links:hover{background-color:#318024}
+}
+
+// //  更改背景图片
+// body {
+// 	height: 100%;
+// 	width: 100%;
+// 	// 透明度 0.6 的黑色半透明遮罩
+// 	background-color: rgba(0, 0, 0, .5);
+// 	// 設置背景混和模式為相乘模式
+// 	background-blend-mode: multiply;
+// 	// 图片自适应剪裁,56.25%=1080/1920
+// 	// padding-top: 56.25%
+// 	background-image:url(https://api.dongmanxingkong.com/suijitupian/acg/1080p/index.php);
+// 	//这一行的括号里填背景图片的路径，将图片重命名为background.jpg放在\themes\next\source\images下
+// 	background-repeat: no-repeat;
+// 	background-attachment:fixed;
+// 	background-position:center center;
+// 	background-size:cover;
+// }
+// //body上的所有子元素, 包括
+// .comments, .pagination, .post-block, .popup, .sidebar {
+//     opacity:0.8;
+// }
+// // header需要单独设置,避免遮挡某些元素的点击事件
+// // 这里的rgb都是从main.css中扒出来的,之后从16进制转换成了rgba数据
+// .header-inner {
+// 	background: rgba(255,255,255,0.8);
+// }
+// // 针对darkmode单独设置
+// @media (prefers-color-scheme: dark){
+// 	.header-inner {
+// 		background: rgba(51,51,51,0.8);
+// 	}
+	
+// }
+// 页面头样式属性  .header-inner 
+// sidebar侧边工具栏样式属性  .sidebar
+// 文章版块样式 .post-block 
+// 评论系统  .comments
+// 搜索框(local-search) .popup
+
+// example: 页脚 <a> 标签 颜色修改
+// #footer a {
+// 	coler: #eee;
+// }
